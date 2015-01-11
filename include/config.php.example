@@ -1,0 +1,105 @@
+<!--
+
+ img_concept (working name)
+ file: config.php
+ purpose: configuration file duh..
+
+--!>
+<?php
+
+# Is imgconcept Installed?
+#define("installed", true);
+
+# SQL Setftings
+define("dbhost", "");
+define("dbuser", "");
+define("dbpass", "");
+define("dbname", "");
+define("db_prefix", "");
+
+# Site Settings
+define("site_logo", ""); //Displayed on top of site
+define("site_name", "a"); //Displayed on top of site
+define("default_skin", ""); //If $themes is set to _TRUE_ this will be skipped
+
+# Registration Settings
+define("captcha", false); //Strongly suggested to be enabled to avoid bots etc.
+define("anychar", true); //Usernames/Passwords can contain all characters
+define("avatars", true); //Allow users to set a avatar.
+define("avatars_dir", ""); //Save avatars here if $avatars is enabled
+
+# -------------------------------
+# Rankings
+define("rank_5imgs", "Noob");
+define("rank_10imgs", "Amateur");
+define("rank_20imgs",  "Rookie");
+define("rank_50imgs", "Dedicated");
+define("rank_100imgs", "PRO User");
+
+# Special Ranks
+define("rank_donator", "Donator");
+define("rank_admin", "Administrator");
+define("rank_founder", "Founder");
+define("rank_banned", "Banned");
+# -------------------------------
+
+
+# Should Skin Match Current Season? (Winter, Summer, Spring etc..)
+#$themed = false;
+
+# Maintenance Settings
+#$maintenance = false;
+#$maintenance_message = $site_name . ' is not available right now.';
+?><!--
+
+ img_concept (working name)
+ file: config.php
+ purpose: configuration file duh..
+
+--!>
+<?php
+
+# Is imgconcept Installed?
+#define("installed", true);
+
+# SQL Setftings
+define("dbhost", "");
+define("dbuser", "");
+define("dbpass", "");
+define("dbname", "");
+define("db_prefix", "");
+
+# Site Settings
+define("site_logo", ""); //Displayed on top of site
+define("site_name", "a"); //Displayed on top of site
+define("default_skin", ""); //If $themes is set to _TRUE_ this will be skipped
+
+# Registration Settings
+define("captcha", false); //Strongly suggested to be enabled to avoid bots etc.
+define("anychar", true); //Usernames/Passwords can contain all characters
+define("avatars", true); //Allow users to set a avatar.
+define("avatars_dir", ""); //Save avatars here if $avatars is enabled
+
+# -------------------------------
+# Rankings
+define("rank_5imgs", "Noob");
+define("rank_10imgs", "Amateur");
+define("rank_20imgs",  "Rookie");
+define("rank_50imgs", "Dedicated");
+define("rank_100imgs", "PRO User");
+
+# Special Ranks
+define("rank_donator", "Donator");
+define("rank_admin", "Administrator");
+define("rank_founder", "Founder");
+define("rank_banned", "Banned");
+# -------------------------------
+
+
+# Should Skin Match Current Season? (Winter, Summer, Spring etc..)
+#$themed = false;
+
+# Maintenance Settings
+#$maintenance = false;
+#$maintenance_message = $site_name . ' is not available right now.';
+?>
