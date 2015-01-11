@@ -22,7 +22,7 @@ echo "
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#999;}
 .tg td{margin-left: 50px; text-align: left;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
 .tg th{margin-left: 50px; text-align: left;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
-.container {background: url('http://bibben.se/wp-content/uploads/2013/07/background.png'); width: 800px; height: 1350px; border-radius: 8px 8px 8px 8px; border: 1px solid black;}
+.container {background: url('http://bibben.se/wp-content/uploads/2013/07/background.png'); width: 800px; height: 1500px; border-radius: 8px 8px 8px 8px; border: 1px solid black;}
 </style>
 <center>
 <div align='center' class='container'>
@@ -146,6 +146,26 @@ If you wish to do configuring manually, edit <b>/include/config.php.example</b> 
     <td class='tg-031e'><input name='rank_banned' type='text'></td>
   </tr>
 </table>
+<br>
+<br>
+<font style='font-size: 16px; font-family: Arial;'><b>Admin Account Settings</b></font>
+<br>
+<br>
+<table class='tg'>
+  <tr>
+    <th class='tg-031e'>Admin Username</th>
+    <th class='tg-031e'><input name='admin_username' type='text'></th>
+  </tr>
+  <tr>
+    <td class='tg-031e'>Admin Password</td>
+    <td class='tg-031e'><input name='admin_password' type='text'></td>
+  </tr>
+  <tr>
+    <td class='tg-031e'>Admin Email</td>
+    <td class='tg-031e'><input name='admin_email' type='text'></td>
+  </tr>
+</table>
+<br>
 <input type='submit' name='install' value='Install' />
 
 </center>
@@ -160,6 +180,7 @@ if (isset ($_POST['install']))
    if ( $_POST['install'] || $_GET['install'] )
    {
 	   config();
+	   database();
 	   redirect();
    }
    else
@@ -215,6 +236,25 @@ function config()
 	$config_content .= "?>";
 	
 	file_put_contents($file, $config_content);
+}
+
+function database()
+{
+	$conn = new mysqli($_POST['dbhost'], $_POST['dbuser'], $_POST['dbpass'], $_POST['dbname']);
+	if ($conn->connect_error) 
+	{
+		die("Could not connect and populate the database with data.\n" . $conn->connect_error);
+	}
+	
+$sql = "INSERT INTO users (username, password, email) VALUES ('". $_POST['admin_username'] ."', '" . md5($_POST['admin_password']) . "', '" . $_POST['admin_email'] . "')";
+    if ($conn->query($sql) === TRUE) 
+	{
+       echo "New record created successfully";
+    } 
+    else 
+    {
+       echo "Error: " . $sql . "<br>" . $conn->error;
+    }
 }
 
 function redirect()
