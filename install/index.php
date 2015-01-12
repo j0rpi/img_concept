@@ -249,7 +249,7 @@ function database()
 $sql = "INSERT INTO users (username, password, email) VALUES ('". $_POST['admin_username'] ."', '" . md5($_POST['admin_password']) . "', '" . $_POST['admin_email'] . "')";
     if ($conn->query($sql) === TRUE) 
 	{
-       echo "New record created successfully";
+       
     } 
     else 
     {
