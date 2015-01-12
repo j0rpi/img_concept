@@ -26,5 +26,5 @@
 <br>
 <font style='font-size: 16px; font-family: Arial;'><b>imgconcept has been successfully installed. click <a href='../index.php'>here to go to site.</a></b></font>
 </center>
-</div>"
+</div>
 
