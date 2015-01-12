@@ -18,7 +18,7 @@ echo "
 .tg td{margin-left: 50px; text-align: left;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
 .tg th{margin-left: 50px; text-align: left;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
 .container {background: url('http://bibben.se/wp-content/uploads/2013/07/background.png'); width: 600px; height: 600px; border-radius: 8px 8px 8px 8px; border: 1px solid black;}
-.login_container {width: 450px; height: 300px; border-radius: 8px 8px 8px 8px; border: 1px solid black; font-family: verdana; font-size: 16px}
+.login_container {background: rgba(0,0,0,0.5); width: 450px; height: 300px; border-radius: 8px 8px 8px 8px; border: 1px solid black; font-family: verdana; font-size: 16px}
 </style>
 <center>
 <div align='center' class='container'>
@@ -28,10 +28,15 @@ echo "
 <br>
 <br>
 <div class='login_container'>
+<br>
+<br>
+<br>
+<br>
   Username<br> <input type='text' name='username'><br>
-  Password<br><input type='text' name='password'><br>
+  Password<br><input type='text' name='password'><br><br>
   <input type='submit' name='login' value='Login'><br>
 </form>
+<br>
 <a href='register.php'>Register Account</a>
 <div>
 </center>
