@@ -9,9 +9,12 @@
 <?php
 include('include/config.php');
 
-if( define('installed') )
+if( defined('installed') )
 {
-	
+	echo '
+	<font style="font-family: verdana; font-size: 16px;"><img src="skin/' . default_skin . '/' . site_logo . '" />
+	IMG_CONCEPT</font>
+	'
 }
 else
 {

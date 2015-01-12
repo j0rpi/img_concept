@@ -14,7 +14,7 @@ define('dbpass', '');
 define('dbname', 'imgconcept');
 
 # Site Settings
-define('site_logo', '/img/logo.png');
+define('site_logo', 'img/logo.png');
 define('site_name', 'imgconcept');
 define('default_skin', 'default');
 
