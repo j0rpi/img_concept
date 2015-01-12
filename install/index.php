@@ -1,7 +1,7 @@
 <!--
 
  img_concept (working name)
- file: install.php
+ file: install/index.php
  purpose: easy installation script
 
 -->

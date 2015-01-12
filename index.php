@@ -9,12 +9,12 @@
 <?php
 include('include/config.php');
 
-if( defined('installed') )
+if( defined("installed") )
 {
-	echo 
-	'
-	<font style="font-family: verdana; font-size: 16px;"><img src="skin/' . default_skin . '/' . site_logo . '" />
-	IMG_CONCEPT</font>
+	echo '
+	<center><font style="font-family: verdana; font-size: 16px;"><img src="skin/' . default_skin . '/' . site_logo . '" />
+	<br>' . site_name . '<br><br><a href="register.php">REGISTER</a> | <a href="login.php">LOGIN</a><br><br>This 
+	is a sample page with the core functions of img_concept</font></center>
 	';
 }
 else

@@ -1,7 +1,7 @@
 <!--
 
  img_concept (working name)
- file: ok.php
+ file: install/ok.php
  purpose: displayed when script is installed..
 
 -->
