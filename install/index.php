@@ -22,7 +22,7 @@ echo "
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#999;}
 .tg td{margin-left: 50px; text-align: left;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
 .tg th{margin-left: 50px; text-align: left;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
-.container {background: url('http://bibben.se/wp-content/uploads/2013/07/background.png'); width: 800px; height: 1550px; border-radius: 8px 8px 8px 8px; border: 1px solid black;}
+.container {background: url('http://bibben.se/wp-content/uploads/2013/07/background.png'); width: 800px; height: 1600px; border-radius: 8px 8px 8px 8px; border: 1px solid black;}
 </style>
 <center>
 <div align='center' class='container'>
