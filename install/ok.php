@@ -4,7 +4,7 @@
  file: ok.php
  purpose: displayed when script is installed..
 
---!>
+-->
 
 <style type='text/css'>
 
