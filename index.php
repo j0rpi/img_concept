@@ -11,10 +11,11 @@ include('include/config.php');
 
 if( defined('installed') )
 {
-	echo '
+	echo 
+	'
 	<font style="font-family: verdana; font-size: 16px;"><img src="skin/' . default_skin . '/' . site_logo . '" />
 	IMG_CONCEPT</font>
-	'
+	';
 }
 else
 {
