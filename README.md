@@ -9,7 +9,7 @@ This PHP script is a simple, yet effective image sharing platform. It allows you
 
 # Installation
 1. Upload 'img_concept' folder to your FTP
-2. Browse to the installation path (www.domain.com/img_concept/install) and follow instructions
+2. Browse to the installation path (www.domain.com/img_concept/install) and follow instructions OR edit include/config.php.example manually and rename to 'config.php'
 3. Go back to www.domain.com/img_concept 
 4. Done
 
